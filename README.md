@@ -1,1 +1,1 @@
-# Проверяемое задание "Структура React-приложения, состояние компонента и работа с CSS"
+[Посмотреть проект на GitHub Pages](https://fgesc.github.io/ReactStateScss/)
