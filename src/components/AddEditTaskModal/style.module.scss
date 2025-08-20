@@ -1,0 +1,74 @@
+@use '../../styles/index.scss' as *;
+@use '../../styles/breakpoints.scss' as breakpoints;
+
+.addEditModal {
+  .modalTitle {
+    font-size: 22px;
+    font-weight: 700;
+    color: #121212;
+    margin-bottom: 30px;
+  }
+}
+
+.modalPriority {
+  margin-top: 20px;
+
+  span {
+    font-size: 14px;
+    font-weight: 700;
+    color: $gray;
+  }
+}
+
+.priorityButtons {
+  display: flex;
+  gap: 13px;
+  margin-top: 12px;
+
+  @include breakpoints.devices(sm) {
+    gap: 10px;
+  }
+
+  li {
+    border: 1px solid $warning-color;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: $warning-color;
+    text-transform: capitalize;
+    padding: 10px 0;
+    width: 90px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .high {
+    border-color: $error-color;
+    color: $error-color;
+
+    &-selected {
+      background-color: $error-color;
+      color: $white;
+    }
+  }
+
+  .medium {
+    border-color: $warning-color;
+    color: $warning-color;
+
+    &-selected {
+      background-color: $warning-color;
+      color: $white;
+    }
+  }
+
+  .low {
+    border-color: $success-color;
+    color: $success-color;
+
+    &-selected {
+      background-color: $success-color;
+      color: $white;
+    }
+  }
+}
